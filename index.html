@@ -7,15 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilo.css"></link>
+    <link rel="stylesheet" href="style/estilo.css"></link>
     <!-- Icone da aplicação : favicon  -->
     <link rel="icon" href="img/logo2.png">
-    <title>SAP-IFBA</title>
+    <title>SAP</title>
   </head>
   <body>
     
     <!-- Barra de Navegação -->
-    <nav class="navbar navbar-default ">
+    <nav class="navbar navbar-inverse">
       <div class="container">
         
         <div class="navbar navbar-header">
@@ -31,52 +31,34 @@
         <div class="collapse navbar-collapse" id="barra-navegacao">
           <!-- Ícones e Botões da barra de navegação -->
           <ul class="nav navbar-nav navbar-right" >
-            <li> <a href="#">Home</a> </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a class="btn btn-success" href="#">Cadastrar Servidor</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Fornecedor</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Setores</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Aquisição</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Listar <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" class="btn btn-success">Listar Servidores</a></li>
-                <li><a href="#" class="btn btn-success">Listar Fornecedores</a></li>
-                <li><a href="#" class="btn btn-success">Listar Setores</a></li>
-                
-              </ul>
-            </li>
+           
             <!-- Divisor do botão -->
             <li class="divisor" role="separator"></li>
 
             <!-- Botão Login -->
             <button type="button" class="btn btn-success"
-                      data-toggle="modal" data-target="#login" 
+                      data-toggle="modal" data-toggle="tooltip" title="Entrar" data-target="#login" 
                       style="margin: 10px">Login</button>
 
 
 
 
               <!-- Tela login -->
-            <form class="modal fade" class="fade" id="login">
+            <form class="modal fade" class="fade" id="login" action="/pages/home/home.html">
 
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
 
                     <!-- cabeçalho do formulario login  -->
                     <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">
+                      <button type="button" class="close" data-dismiss="modal" >
                         <span>&times;</span>
                       </button>
                       <h4 class="modal-title">Login</h4>
                     </div>
 
                     <!-- Corpo do formulario login -->
-                    <div class="modal-body">
+                    <div class="modal-body">  
                   
                       <div class="form-group">
                         <input type="text" id="usuario" class="form-control" placeholder="Digite o nome de usuário">
@@ -85,17 +67,18 @@
                       <div class="form-group">
                         <input type="password" id="senha" class="form-control" placeholder="Digite a sua senha">
                       </div>
-         
+
                     </div>
 
                     <!-- Rodapé do formaulário login -->
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                      <button type="submite" class="btn btn-success">Logar</button>                      
+                      <button type="submit" action="" class="btn btn-success" formaction="pages/home/home.html">Logar</button>                      
+                    </div>
+
                   </div>
 
                 </div>
-        
             </form>
         
           </ul>
@@ -109,25 +92,24 @@
     <div class="container">
 
       <div class="page-header">
-       <h1>Sistema de Atendimento de Processos de Compras, Licitações e Contratos</h1>
+        <h1>Sistema de Atendimento de Processos de Compras, Licitações e Contratos</h1>
 
       </div>
-    <!-- Criação de abas  -->
+      <!-- Criação de abas  -->
 
-    <ul class="nav nav-tabs " role="tablist">
-      <li class="active">
-        <a href="#dashboard" role="tab" data-toggle="tablist">Dashboard</a>
-      </li>
-    </ul>
+      <ul class="nav nav-tabs " role="tablist">
+        <li class="active">
+          <a href="#dashboard" role="tab" data-toggle="tablist">Dashboard</a>
+        </li>
+      </ul>
 
-    <!-- Conteudo da aba -->
-    <div class="tab-content">
-      <!-- Aba do dashboard -->
-      <div class="tab-pane" role="tabepanel" id="dashboard">
-        
+      <!-- Conteudo da aba -->
+      <div class="tab-content">
+        <!-- Aba do dashboard -->
+        <div class="tab-pane" role="tabepanel" id="dashboard">
+        </div>
+
       </div>
-    </div>
-
 
     </div>
 
@@ -135,6 +117,11 @@
 
      <!-- to use bootstrap v3.3.7  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+       $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
