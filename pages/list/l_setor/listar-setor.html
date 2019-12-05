@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br  ">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style/estilo.css"></link>
+    <!-- Icone da aplicação : favicon  -->
+    <link rel="icon" href="../../../img/logo2.png">
+    <title>SAP-SETOR</title>
+  </head>
+  <body>
+    
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-inverse ">
+      <div class="container">
+        
+        <div class="navbar navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alterar Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a href="" class="navbar-brand">SAP</a>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <!-- Ícones e Botões da barra de navegação -->
+          <ul class="nav navbar-nav navbar-right" >
+            <li> <a href="../../home/home.html">Home</a> </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="btn btn-success" href="#">Cadastrar Servidor</a></li>
+                <li><a href="#" class="btn btn-success">Cadastrar Fornecedor</a></li>
+                <li><a href="#" class="btn btn-success">Cadastrar Setores</a></li>
+                <li><a href="#" class="btn btn-success">Cadastrar Aquisição</a></li>
+              </ul>
+            </li>
+            <!-- Menu de listagens -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Listar <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../l_fornecedores/listar-fornecedores.html" class="btn btn-success">Listar Fornecedores</a></li>
+                <li><a href="../l_servidores/listar-servidores.html" class="btn btn-success">Listar Servidores</a></li>
+              </ul>
+            </li>
+            <!-- Divisor do botão -->
+            <li class="divisor" role="separator"></li>
+
+            <!-- Botão Sair -->
+            <button type="submit" class="btn btn-danger"
+                    style="margin: 10px;" data-toggle="modal"
+                    data-toggle="tooltip" title="Sair"
+                    data-target="#confirmar">
+              Sair
+            </button>
+            <!-- Modal confirm -->
+            <form class="modal fade" class="fade" id="confirmar" action="../../../index.html">
+
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+
+                    <!-- cabeçalho do formulario login  -->
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" >
+                        <span>&times;</span>
+                      </button>
+                      <h4 class="modal-title">Sair</h4>
+                    </div>
+
+                    <!-- Corpo do formulario login -->
+                    <div class="modal-body">  
+                  
+                      <h4>Confirmar Saída ?</h4>
+
+                    </div>
+
+                    <!-- Rodapé do formaulário login -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                      <button type="submit" action="" class="btn btn-danger" formaction="../../../index.html">Sair</button>                      
+                    </div>
+
+                  </div>
+
+                </div>
+            </form>
+          </ul>
+
+        </div>
+
+      </div>
+   
+    </nav>
+    
+    <!-- Corpo da página -->
+    <div class="container">
+
+      <div class="page-header">
+       <h1>Setores</h1>
+
+      </div>
+    <!-- Criação de abas  -->
+
+      <ul class="nav nav-tabs " role="tablist" data-toggle="tab">
+        <li class="active">
+          <a href="#servidor" role="tab" data-toggle="tab">Setor</a>
+        </li>
+      </ul>
+      <!-- Conteudo da aba -->
+      <div class="tab-content">
+        <!-- Aba de servidor -->
+        <div class="tab-pane active" role="tabepanel" id="fornecedores">
+          <table class="table table-striped table-condensed table-hover table-bordered table-dark">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Sigla</th>
+                <th>Ramal</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Exemple</td>
+                <td>Exemple</td>
+                <td>Exemple</td>
+                <td>Exemple</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+
+
+    </div>
+
+    
+
+     <!-- to use bootstrap v3.3.7  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../js/bootstrap.min.js"></script>
+  </body>
+</html> 
