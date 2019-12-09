@@ -14,4 +14,8 @@
 	margin:5px 15px;
 	color: #fff;
 }
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: black;
+}
+
 /*======================================================*/
