@@ -1,126 +1,143 @@
 <!doctype html>
 <html lang="pt-br  ">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/all.css"></link>
-    <!-- Icone da aplicação : favicon  -->
-    <link rel="icon" href="img/logo2.png">
-    <title>SAP</title>
-  </head>
-  <body>
-    
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-        
-        <div class="navbar navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="sr-only">Alterar Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-           <a href="" class="navbar-brand">SAP</a>
-        </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/all.css"></link>
+  <!-- Icone da aplicação : favicon  -->
+  <link rel="icon" href="img/logo2.png">
+  <title>SAP</title>
+</head>
+<body>
+  
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
       
-        <div class="collapse navbar-collapse" id="barra-navegacao">
-          <!-- Ícones e Botões da barra de navegação -->
-          <ul class="nav navbar-nav navbar-right" >
-           
+      <div class="navbar navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+          <span class="sr-only">Alterar Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">SAP</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <!-- Ícones e Botões da barra de navegação -->
+        <ul class="nav navbar-nav navbar-right" >
+         
           
-            <!-- Botão Login -->
-            <button type="button" class="btn btn-success"
-                      data-toggle="modal" data-toggle="tooltip" title="Entrar" data-target="#login" 
-                      style="margin: 10px">Login</button>
+          <!-- Botão Login -->
+          <button type="button" class="btn btn-success"
+          data-toggle="modal" data-toggle="tooltip" title="Entrar" data-target="#login" 
+          style="margin: 10px">Login</button>
 
 
 
 
-              <!-- Tela login -->
-            <form class="modal fade" class="fade" id="login" action="/pages/home/home.html">
+          <!-- Tela login -->
+          <form class="modal fade" class="fade" id="login" action="/pages/home/home.html">
 
-                <div class="modal-dialog modal-sm">
-                  <div class="modal-content">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
 
-                    <!-- cabeçalho do formulario login  -->
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" >
-                        <span>&times;</span>
-                      </button>
-                      <h4 class="modal-title">Login</h4>
-                    </div>
+                <!-- cabeçalho do formulario login  -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" >
+                    <span>&times;</span>
+                  </button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
 
-                    <!-- Corpo do formulario login -->
-                    <div class="modal-body">  
+                <!-- Corpo do formulario login -->
+                <div class="modal-body">  
                   
-                      <div class="form-group">
-                        <input type="text" id="usuario" class="form-control"placeholder="Digite o nome de usuário">
-                      </div>
+                  <div class="form-group">
+                    <input type="text" id="usuario" class="form-control"placeholder="Digite o nome de usuário">
+                  </div>
 
-                      <div class="form-group">
-                        <input type="password" id="senha" class="form-control" placeholder="Digite a sua senha">
-                      </div>
-
-                    </div>
-
-                    <!-- Rodapé do formaulário login -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                      <button type="submit" action="" class="btn btn-success" formaction="pages/home/home.html">Logar</button>                      
-                    </div>
-
+                  <div class="form-group">
+                    <input type="password" id="senha" class="form-control" placeholder="Digite a sua senha">
                   </div>
 
                 </div>
-            </form>
-        
-          </ul>
 
-        </div>
+                <!-- Rodapé do formaulário login -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" action="" class="btn btn-success" formaction="pages/home/home.html">Logar</button>                      
+                </div>
 
-      </div>
-   
-    </nav>
+              </div>
 
-    <div class="container">
-
-      <div class="page-header">
-        <h1>Sistema de Acompanhamento de Processos de Compras, Licitações e Contratos</h1>
-
-      </div>
-      <!-- Criação de abas  -->
-
-      <ul class="nav nav-tabs " role="tablist">
-        <li class="active">
-          <a href="#dashboard" role="tab" data-toggle="tablist">Dashboard</a>
-        </li>
-      </ul>
-
-      <!-- Conteudo da aba -->
-      <div class="tab-content">
-        <!-- Aba do dashboard -->
-        <div class="tab-pane" role="tabepanel" id="dashboard">
-        </div>
+            </div>
+          </form>
+          
+        </ul>
 
       </div>
 
     </div>
-
     
+  </nav>
 
-     <!-- to use bootstrap v3.3.7  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(function () {
-       $('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Sistema de Acompanhamento de Processos de Compras, Licitações e Contratos</h1>
+
+    </div>
+    <!-- Criação de abas  -->
+
+    <ul class="nav nav-tabs " role="tablist">
+      <li class="active">
+        <a href="#dashboard" role="tab" data-toggle="tablist">Dashboard</a>
+      </li>
+    </ul>
+
+    <!-- Conteudo da aba -->
+    <div class="tab-content">
+      <!-- Aba do dashboard -->
+      <div class="tab-pane" role="tabepanel" id="dashboard">
+      </div>
+
+    </div>
+
+  </div>
+
+  
+  <!-- Rodape -->
+  <footer id="rodape">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="" class="navbar-brand">SAP</a>
+        </div>
+        <div class="col-md-2">
+          <h4>IFBA</h4>
+          <ul>
+            <li>
+              <a href="https://portal.ifba.edu.br/" target="_blank">Portal IFBA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- to use bootstrap v3.3.7  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+     $('[data-toggle="tooltip"]').tooltip()
+   })
+ </script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>

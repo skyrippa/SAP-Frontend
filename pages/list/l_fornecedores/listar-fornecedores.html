@@ -1,272 +1,289 @@
 <!doctype html>
 <html lang="pt-br  ">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../../plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style/all.css"></link>
-    <!-- Icone da aplicação : favicon  -->
-    <link rel="icon" href="../../../img/logo2.png">
-    <title>SAP-FORNECEDORES</title>
-  </head>
-  <body>
-    
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-inverse navbar-fixed-*">
-      <div class="container">
-        
-        <div class="navbar navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="sr-only">Alterar Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-           <a href="" class="navbar-brand">SAP</a>
-        </div>
-      
-        <div class="collapse navbar-collapse" id="barra-navegacao">
-          <!-- Ícones e Botões da barra de navegação -->
-          <ul class="nav navbar-nav navbar-right" >
-            <li> <a href="../../home/home.html">Home</a> </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a class="btn btn-success" href="#">Cadastrar Servidor</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Fornecedor</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Setores</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Aquisição</a></li>
-              </ul>
-            </li>
-            <!-- Menu de listagens -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Listar <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="../l_servidores/listar-servidores.html" class="btn btn-success">Listar Servidores</a></li>
-                <li><a href="../l_setor/listar-setor.html" class="btn btn-success">Listar Setores</a></li>
-                
-              </ul>
-            </li>
-            <!-- Divisor do botão -->
-            <li class="divisor" role="separator"></li>
-
-            <!-- Botão Sair -->
-            <!-- Botão Sair -->
-            <button type="submit" class="btn btn-danger"
-                    style="margin: 10px;" data-toggle="modal"
-                    data-toggle="tooltip" title="Sair"
-                    data-target="#confirmar">
-              Sair
-            </button>
-            <!-- Modal confirm -->
-            <form class="modal fade" class="fade" id="confirmar" action="../../../index.html">
-
-                <div class="modal-dialog modal-sm">
-                  <div class="modal-content">
-
-                    <!-- cabeçalho do formulario login  -->
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" >
-                        <span>&times;</span>
-                      </button>
-                      <h4 class="modal-title">Sair</h4>
-                    </div>
-
-                    <!-- Corpo do formulario login -->
-                    <div class="modal-body">  
-                  
-                      <h4>Confirmar Saída ?</h4>
-
-                    </div>
-
-                    <!-- Rodapé do formaulário login -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                      <button type="submit" action="" class="btn btn-danger" formaction="../../../index.html">Sair</button>                      
-                    </div>
-
-                  </div>
-
-                </div>
-            </form>
-          </ul>
-
-        </div>
-
-      </div>
-   
-    </nav>
-    
-    <!-- Corpo da página -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../../plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../style/all.css"></link>
+  <!-- Icone da aplicação : favicon  -->
+  <link rel="icon" href="../../../img/logo2.png">
+  <title>SAP-FORNECEDORES</title>
+</head>
+<body>
+  
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-inverse navbar-fixed-*">
     <div class="container">
-
-      <div class="page-header">
-       <h1>Fornecedores</h1>
-
+      
+      <div class="navbar navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+          <span class="sr-only">Alterar Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">SAP</a>
       </div>
-    <!-- Criação de abas  -->
+      
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <!-- Ícones e Botões da barra de navegação -->
+        <ul class="nav navbar-nav navbar-right" >
+          <li> <a href="../../home/home.html">Home</a> </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a class="btn btn-success" href="#">Cadastrar Servidor</a></li>
+              <li><a href="#" class="btn btn-success">Cadastrar Fornecedor</a></li>
+              <li><a href="#" class="btn btn-success">Cadastrar Setores</a></li>
+              <li><a href="#" class="btn btn-success">Cadastrar Aquisição</a></li>
+            </ul>
+          </li>
+          <!-- Menu de listagens -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Listar <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../l_servidores/listar-servidores.html" class="btn btn-success">Listar Servidores</a></li>
+              <li><a href="../l_setor/listar-setor.html" class="btn btn-success">Listar Setores</a></li>
+              
+            </ul>
+          </li>
+          <!-- Divisor do botão -->
+          <li class="divisor" role="separator"></li>
 
-      <ul class="nav nav-tabs " role="tablist" data-toggle="tab">
-        <li class="active">
-          <a href="#fornecedores" role="tab" data-toggle="tab">Fornecedores</a>
-        </li>
-        <li>
-          <a href="#lista-negra" role="tab" data-toggle="tab">Lista-Negra</a>
-        </li>
+          <!-- Botão Sair -->
+          <!-- Botão Sair -->
+          <button type="submit" class="btn btn-danger"
+          style="margin: 10px;" data-toggle="modal"
+          data-toggle="tooltip" title="Sair"
+          data-target="#confirmar">
+          Sair
+        </button>
+        <!-- Modal confirm -->
+        <form class="modal fade" class="fade" id="confirmar" action="../../../index.html">
+
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+              <!-- cabeçalho do formulario login  -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" >
+                  <span>&times;</span>
+                </button>
+                <h4 class="modal-title">Sair</h4>
+              </div>
+
+              <!-- Corpo do formulario login -->
+              <div class="modal-body">  
+                
+                <h4>Confirmar Saída ?</h4>
+
+              </div>
+
+              <!-- Rodapé do formaulário login -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="submit" action="" class="btn btn-danger" formaction="../../../index.html">Sair</button>                      
+              </div>
+
+            </div>
+
+          </div>
+        </form>
       </ul>
 
+    </div>
 
-      <!-- Conteudo da aba -->
-      <div class="tab-content">
-        <!-- Aba de fornecedores -->
-        <div class="tab-pane active" role="tabepanel" id="fornecedores">
-          <table class="table table-striped table-condensed table-hover table-bordered table-dark">
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>CNPJ</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>Ver Mais</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Casas Pencilna</td>
-                <td>157.457.556-15</td>
-                <td>administracao@casaspencilna.com</td>
-                <td>(77)9177-0077</td>
-                <td>
-                  <button type="button" class="btn btn-primary">
-                    +
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Fábrica Castelo</td>
-                <td>400.289.220-70</td>
-                <td>contato@fabricacastelo.com</td>
-                <td>(42)89224002</td>
-                <td><a href="" class="btn btn-primary">+</a></td>
-              </tr>
-
-            </tbody>
-          </table>
-
-
-        </div>
-        <!-- Aba de fornecedores em Lista Negra -->
-        <div class="tab-pane" role="tabepanel" id="lista-negra">
-          <table class="table table-striped table-condensed table-hover table-bordered table-dark">
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>CNPJ</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>Ver Mais</th>
-              </tr>
-            </thead>
-            <tbody>
-              <td>Casas Pencilna</td>
-                <td>157.457.556-15</td>
-                <td>administracao@casaspencilna.com</td>
-                <td>(77)9177-0077</td>
-                
-                  <!-- Botão de mais informações -->
-                <td>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">
-                    +
-                  </button>
-                </td>
-              </tr>
-              
-            </tbody>
-          </table>
+  </div>
   
-          <!-- Tela de informações -->
-          <form class="modal fade" class="fade" id="info" action="../../alterar-fornecedor">
-              <div class="modal-dialog modal-md">
-                <div class="modal-content">
-                  
-                  <!-- cabeçalho do modal de informações do fornecedor  -->
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      <span>&times;</span>
-                    </button>
-                    <h4 class="modal-title">Informações sobre o fornecedor</h4>
-                  </div>
-                  
-                  <!-- Corpo do formulario -->
-                  <div class="modal-body"> 
-                    <table>
-                      <tr>
-                        <th>Razão Social</th>
-                        <td>[...]</td>
-                      </tr>
-                      <tr>
-                        <th>Nome Fantasia</th>
-                        <td>Casas Pencilna</td>
-                      </tr>
-                      <tr>
-                        <th>CNPJ</th>
-                        <td>157.457.556-15  </td>
-                      </tr>
-                      <tr>
-                        <th>Cidade/Estado</th>
-                        <td>Uibai/BA</td>
-                      </tr>
-                      <tr>
-                        <th>Telefone</th>
-                        <td>(77)9177-0077</td>
-                      </tr>
-                      <tr>
-                        <th>E-mail</th>
-                        <td>administracao@casaspencilna.com </td>
-                      </tr>
-                      <tr>
-                        <th>Nome do responsável</th>
-                        <td>Pencilna Paloma Araujo</td>
-                      </tr>   
-                    </table>    
-                  
-                  <!-- Rodapé do formaulário -->
-                  <div class="modal-footer">
-                    <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary"
-                      style="margin-left:10px;" formaction="../../register/alterar-fornecedor">
-                        <span class="glyphicon glyphicon-pencil" data-toggle="tooltip"class="tooltip-arrow"title="Alterar"></span>
-                      </button>
-                      <button type="button" class="btn btn-danger" onclick="excluir()" 
-                      style="margin-left:10px;">
-                        <span class="glyphicon glyphicon-trash" data-toggle="tooltip"class="tooltip-arrow"title="Excluir"></span>
-                      </button>
-                    </div>
-                  </div>          
-                </div>
-              </div>
-          </form>
+</nav>
 
-        </div>
-      </div>
+<!-- Corpo da página -->
+<div class="container">
+
+  <div class="page-header">
+   <h1>Fornecedores</h1>
+
+ </div>
+ <!-- Criação de abas  -->
+
+ <ul class="nav nav-tabs " role="tablist" data-toggle="tab">
+  <li class="active">
+    <a href="#fornecedores" role="tab" data-toggle="tab">Fornecedores</a>
+  </li>
+  <li>
+    <a href="#lista-negra" role="tab" data-toggle="tab">Lista-Negra</a>
+  </li>
+</ul>
+
+
+<!-- Conteudo da aba -->
+<div class="tab-content">
+  <!-- Aba de fornecedores -->
+  <div class="tab-pane active" role="tabepanel" id="fornecedores">
+    <table class="table table-striped table-condensed table-hover table-bordered table-dark">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CNPJ</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ver Mais</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Casas Pencilna</td>
+          <td>157.457.556-15</td>
+          <td>administracao@casaspencilna.com</td>
+          <td>(77)9177-0077</td>
+          <td>
+            <button type="button" class="btn btn-primary">
+              +
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Fábrica Castelo</td>
+          <td>400.289.220-70</td>
+          <td>contato@fabricacastelo.com</td>
+          <td>(42)89224002</td>
+          <td><a href="" class="btn btn-primary">+</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+  </div>
+  <!-- Aba de fornecedores em Lista Negra -->
+  <div class="tab-pane" role="tabepanel" id="lista-negra">
+    <table class="table table-striped table-condensed table-hover table-bordered table-dark">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CNPJ</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ver Mais</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>Casas Pencilna</td>
+        <td>157.457.556-15</td>
+        <td>administracao@casaspencilna.com</td>
+        <td>(77)9177-0077</td>
+        
+        <!-- Botão de mais informações -->
+        <td>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">
+            +
+          </button>
+        </td>
+      </tr>
       
+    </tbody>
+  </table>
+  
+  <!-- Tela de informações -->
+  <form class="modal fade" class="fade" id="info" action="../../alterar-fornecedor">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        
+        <!-- cabeçalho do modal de informações do fornecedor  -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <h4 class="modal-title">Informações sobre o fornecedor</h4>
+        </div>
+        
+        <!-- Corpo do formulario -->
+        <div class="modal-body"> 
+          <table>
+            <tr>
+              <th>Razão Social</th>
+              <td>[...]</td>
+            </tr>
+            <tr>
+              <th>Nome Fantasia</th>
+              <td>Casas Pencilna</td>
+            </tr>
+            <tr>
+              <th>CNPJ</th>
+              <td>157.457.556-15  </td>
+            </tr>
+            <tr>
+              <th>Cidade/Estado</th>
+              <td>Uibai/BA</td>
+            </tr>
+            <tr>
+              <th>Telefone</th>
+              <td>(77)9177-0077</td>
+            </tr>
+            <tr>
+              <th>E-mail</th>
+              <td>administracao@casaspencilna.com </td>
+            </tr>
+            <tr>
+              <th>Nome do responsável</th>
+              <td>Pencilna Paloma Araujo</td>
+            </tr>   
+          </table>    
+          
+          <!-- Rodapé do formaulário -->
+          <div class="modal-footer">
+            <div class="btn-toolbar" role="toolbar">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary"
+                style="margin-left:10px;" formaction="../../register/alterar-fornecedor">
+                <span class="glyphicon glyphicon-pencil" data-toggle="tooltip"class="tooltip-arrow"title="Alterar"></span>
+              </button>
+              <button type="button" class="btn btn-danger" onclick="excluir()" 
+              style="margin-left:10px;">
+              <span class="glyphicon glyphicon-trash" data-toggle="tooltip"class="tooltip-arrow"title="Excluir"></span>
+            </button>
+          </div>
+        </div>          
+      </div>
+    </div>
+  </form>
 
-     <!-- to use bootstrap v3.3.7  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</div>
+</div>
 
-    <script>
-      function excluir(){
-        alert("Fornecedor Excluído com sucesso!!")
-      }
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../../plugins/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+<!-- Rodape -->
+<footer id="rodape">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <a href="" class="navbar-brand">SAP</a>
+      </div>
+      <div class="col-md-2">
+        <h4>IFBA</h4>
+        <ul>
+          <li>
+            <a href="https://portal.ifba.edu.br/" target="_blank">Portal IFBA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- to use bootstrap v3.3.7  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+  function excluir(){
+    alert("Fornecedor Excluído com sucesso!!")
+  }
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../../plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>

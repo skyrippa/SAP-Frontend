@@ -1,144 +1,161 @@
 <!doctype html>
 <html lang="pt-br  ">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style/all.css"></link>
-    <!-- Icone da aplicação : favicon  -->
-    <link rel="icon" href="../../img/logo2.png">
-    <title>SAP</title>
-  </head>
-  <body>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../style/all.css"></link>
+	<!-- Icone da aplicação : favicon  -->
+	<link rel="icon" href="../../img/logo2.png">
+	<title>SAP</title>
+</head>
+<body>
 
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-        
-        <div class="navbar navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="sr-only">Alterar Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-           <a href="" class="navbar-brand">SAP</a>
-        </div>
-      
-        <div class="collapse navbar-collapse" id="barra-navegacao" >
-          <!-- Ícones e Botões da barra de navegação -->
-          <ul class="nav navbar-nav navbar-right" >
-            <li> <a href="home.html">Home</a> </li>
+	<!-- Barra de Navegação -->
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			
+			<div class="navbar navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+					<span class="sr-only">Alterar Menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand">SAP</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="barra-navegacao" >
+				<!-- Ícones e Botões da barra de navegação -->
+				<ul class="nav navbar-nav navbar-right" >
+					<li> <a href="home.html">Home</a> </li>
 
-            <!-- Menu de Cadastros -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a class="btn btn-success" href="#">Cadastrar Servidor</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Fornecedor</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Setores</a></li>
-                <li><a href="#" class="btn btn-success">Cadastrar Aquisição</a></li>
-              </ul>
-            </li>
-            
-            <!-- Menu de listagens -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Listar <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="../list/l_fornecedores/listar-fornecedores.html" class="btn btn-success">Listar Fornecedores</a></li>
-                <li><a href="../list/l_servidores/listar-servidores.html" class="btn btn-success">Listar Servidores</a></li>
-                <li><a href="../list/l_setor/listar-setor.html" class="btn btn-success">Listar Setores</a></li>
-                
-              </ul>
-            </li>
-            <!-- Divisor do botão -->
-            <li class="divisor" role="separator"></li>
+					<!-- Menu de Cadastros -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="btn btn-success" href="#">Cadastrar Servidor</a></li>
+							<li><a href="#" class="btn btn-success">Cadastrar Fornecedor</a></li>
+							<li><a href="#" class="btn btn-success">Cadastrar Setores</a></li>
+							<li><a href="#" class="btn btn-success">Cadastrar Aquisição</a></li>
+						</ul>
+					</li>
+					
+					<!-- Menu de listagens -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Listar <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../list/l_fornecedores/listar-fornecedores.html" class="btn btn-success">Listar Fornecedores</a></li>
+							<li><a href="../list/l_servidores/listar-servidores.html" class="btn btn-success">Listar Servidores</a></li>
+							<li><a href="../list/l_setor/listar-setor.html" class="btn btn-success">Listar Setores</a></li>
+							
+						</ul>
+					</li>
+					<!-- Divisor do botão -->
+					<li class="divisor" role="separator"></li>
 
-            <!-- Botão Sair -->
-            <button type="submit" class="btn btn-danger"
-                    style="margin: 10px;" data-toggle="modal"
-                    data-toggle="tooltip" title="Sair"
-                    data-target="#confirmar">
-              Sair
-            </button>
-            <!-- Modal confirm -->
-            <form class="modal fade" class="fade" id="confirmar" action="../../index.html">
+					<!-- Botão Sair -->
+					<button type="submit" class="btn btn-danger"
+					style="margin: 10px;" data-toggle="modal"
+					data-toggle="tooltip" title="Sair"
+					data-target="#confirmar">
+					Sair
+				</button>
+				<!-- Modal confirm -->
+				<form class="modal fade" class="fade" id="confirmar" action="../../index.html">
 
-                <div class="modal-dialog modal-sm">
-                  <div class="modal-content">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
 
-                    <!-- cabeçalho do formulario login  -->
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" >
-                        <span>&times;</span>
-                      </button>
-                      <h4 class="modal-title">Sair</h4>
-                    </div>
+							<!-- cabeçalho do formulario login  -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" >
+									<span>&times;</span>
+								</button>
+								<h4 class="modal-title">Sair</h4>
+							</div>
 
-                    <!-- Corpo do formulario login -->
-                    <div class="modal-body">  
-                  
-                      <h4>Confirmar Saída ?</h4>
+							<!-- Corpo do formulario login -->
+							<div class="modal-body">  
+								
+								<h4>Confirmar Saída ?</h4>
 
-                    </div>
+							</div>
 
-                    <!-- Rodapé do formaulário login -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                      <button type="submit" action="" class="btn btn-danger" formaction="../../index.html">Sair</button>                      
-                    </div>
+							<!-- Rodapé do formaulário login -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+								<button type="submit" action="" class="btn btn-danger" formaction="../../index.html">Sair</button>                      
+							</div>
 
-                  </div>
+						</div>
 
-                </div>
-            </form>
-          </ul>
+					</div>
+				</form>
+			</ul>
 
-        </div>
+		</div>
 
-      </div>
-   
-    </nav>  
-    
-    <!-- Conteúdo da pagina -->
-    <div class="container">
+	</div>
+	
+</nav>  
 
-      <div class="page-header">
-       <h1>Sistema de Acompanhamento de Processos de Compras, Licitações e Contratos</h1>
+<!-- Conteúdo da pagina -->
+<div class="container">
 
-      </div>
-    <!-- Criação de abas  -->
+	<div class="page-header">
+	 <h1>Sistema de Acompanhamento de Processos de Compras, Licitações e Contratos</h1>
 
-    <ul class="nav nav-tabs " role="tablist">
-      <li class="active">
-        <a href="#dashboard" role="tab" data-toggle="tablist">Dashboard</a>
-      </li>
-    </ul>
+ </div>
+ <!-- Criação de abas  -->
 
-    <!-- Conteudo da aba -->
-    <div class="tab-content">
-      <!-- Aba do dashboard -->
-      <div class="tab-pane" role="tabepanel" id="dashboard">
-        
-      </div>
-    </div>
+ <ul class="nav nav-tabs " role="tablist">
+	<li class="active">
+		<a href="#dashboard" role="tab" data-toggle="tablist">Dashboard</a>
+	</li>
+</ul>
+
+<!-- Conteudo da aba -->
+<div class="tab-content">
+	<!-- Aba do dashboard -->
+	<div class="tab-pane" role="tabepanel" id="dashboard">
+		
+	</div>
+</div>
 
 
-    </div>
+</div>
 
-    
 
-     <!-- to use bootstrap v3.3.7  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript">
-      function sair(){
-        window.locale.href='../../index.html'
-      }
-    </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+<!-- Rodape -->
+<footer id="rodape">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<a href="" class="navbar-brand">SAP</a>
+			</div>
+			<div class="col-md-2">
+				<h4>IFBA</h4>
+				<ul>
+					<li>
+						<a href="https://portal.ifba.edu.br/" target="_blank">Portal IFBA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- to use bootstrap v3.3.7  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	function sair(){
+		window.locale.href='../../index.html'
+	}
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>
