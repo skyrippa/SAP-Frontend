@@ -16,7 +16,7 @@ $.ajax({
 
       } catch (e) {
 
-        console.log('Não foi possivel listar os servidores :')
+        console.log('Não foi possivel listar os Fornecedores :')
         alert('Erro ao buscar Fornecedores')
 
       }
