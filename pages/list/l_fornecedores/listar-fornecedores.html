@@ -121,38 +121,21 @@
 
 <!-- Conteudo da aba -->
 <div class="tab-content">
-  <!-- Aba de fornecedores -->
+ <!-- Aba de fornecedores -->
   <div class="tab-pane active" role="tabepanel" id="fornecedores">
-    <table class="table table-striped table-condensed table-hover table-bordered table-dark">
+    <!-- TABELA DE FORNECEDORES -->
+    <table id="table-providers" class="table table-striped table-condensed table-hover table-bordered table-dark" >
       <thead>
         <tr>
           <th>Nome</th>
           <th>CNPJ</th>
-          <th>Email</th>
           <th>Telefone</th>
+          <th>Email</th>
           <th>Ver Mais</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Casas Pencilna</td>
-          <td>157.457.556-15</td>
-          <td>administracao@casaspencilna.com</td>
-          <td>(77)9177-0077</td>
-          <td>
-            <button type="button" class="btn btn-primary">
-              +
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Fábrica Castelo</td>
-          <td>400.289.220-70</td>
-          <td>contato@fabricacastelo.com</td>
-          <td>(42)89224002</td>
-          <td><a href="" class="btn btn-primary">+</a></td>
-        </tr>
-
+        <!-- Its will be populated by JavaScript -->
       </tbody>
     </table>
 
@@ -267,6 +250,6 @@
 </script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../../plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="fornecedores.js"></script>
+<script src="js/fornecedores.js"></script>
 </body>
 </html>
