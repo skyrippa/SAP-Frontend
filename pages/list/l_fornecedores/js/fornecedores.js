@@ -1,6 +1,5 @@
 //Variáveis
 var providersArray = []
-var variavel = 19
 //AJAX -  URL request and saving api-data
 $.ajax({
     method:'GET',
@@ -30,16 +29,27 @@ $.ajax({
 function populateTable(data){
     var table = document.getElementById('table-providers')
     for (var i = 0; i < data.length; i++) {
-      var row = ` <tr>
-                      <td>${data[i].nomeFantasia}</td>
-                      <td>${data[i].cnpj}</td>
-                      <td>${data[i].telefone}</td>
-                      <td>${data[i].email}</td>
-                      <td><button type="button" class="btn btn-primary" " data-toggle="modal" data-target="#info">+</button></td>
-                  </tr>`      
-          table.innerHTML+= row
+      var row
+      if (data[i].listaNegra == true) {
+        row = ` <tr class="alert alert-danger">
+                    <td>${data[i].nomeFantasia}</td>
+                    <td>${data[i].cnpj}</td>
+                    <td>${data[i].telefone}</td>
+                    <td>${data[i].email}</td>
+                    <td><button type="button" class="btn btn-primary" " data-toggle="modal" data-target="#info">+</button></td>
+                </tr>`      
+      } else {
+        row = ` <tr>
+                    <td>${data[i].nomeFantasia}</td>
+                    <td>${data[i].cnpj}</td>
+                    <td>${data[i].telefone}</td>
+                    <td>${data[i].email}</td>
+                    <td><button type="button" class="btn btn-primary" " data-toggle="modal" data-target="#info">+</button></td>
+                </tr>`
+      }
+      table.innerHTML+= row
     }
-  }
+}
 
 //Populate table Lista Negra
 function populateTableBL(data){
