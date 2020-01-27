@@ -1,6 +1,6 @@
 //Variáveis
 var providersArray = []
-
+var variavel = 19
 //AJAX -  URL request and saving api-data
 $.ajax({
     method:'GET',
@@ -29,18 +29,15 @@ $.ajax({
 // Populate table Fornecedores
 function populateTable(data){
     var table = document.getElementById('table-providers')
-    for (var i = 0; i < data.length; i++) { 
-      var row = ` <tr><td>${data[i].nomeFantasia}</td>
+    for (var i = 0; i < data.length; i++) {
+      var row = ` <tr>
+                      <td>${data[i].nomeFantasia}</td>
                       <td>${data[i].cnpj}</td>
                       <td>${data[i].telefone}</td>
                       <td>${data[i].email}</td>
-                      <td><button type="button" class="btn btn-primary">+</button>
-                      </td>
-                  </tr>`
-                    
-                    
-                
-      table.innerHTML+= row
+                      <td><button type="button" class="btn btn-primary" " data-toggle="modal" data-target="#info">+</button></td>
+                  </tr>`      
+          table.innerHTML+= row
     }
   }
 
@@ -56,12 +53,18 @@ function populateTableBL(data){
                     <td>${data[i].cnpj}</td>
                     <td>${data[i].telefone}</td>
                     <td>${data[i].email}</td>
-                    <td><button type="button" class="btn btn-primary">+</button>
+                    <td><button type="button" class="btn btn-primary"" data-toggle="modal" data-target="#info">+</button>
                  </tr>`
 
-      table.innerHTML += row
+          table.innerHTML += row
     }
   }
+}
+
+function infoFornecedor(data) {
+
+  console.log(data)
+
 }
 
 //--------------------Functions--------------------//
