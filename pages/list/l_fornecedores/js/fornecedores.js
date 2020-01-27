@@ -55,7 +55,8 @@ function populateTableBL(data){
                     <td>${data[i].nomeFantasia}</td>
                     <td>${data[i].cnpj}</td>
                     <td>${data[i].telefone}</td>
-                    <td>${data[i].email}</td> 
+                    <td>${data[i].email}</td>
+                    <td><button type="button" class="btn btn-primary">+</button>
                  </tr>`
 
       table.innerHTML += row
