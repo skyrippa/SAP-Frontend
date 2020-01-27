@@ -11,6 +11,7 @@ $.ajax({
         //Save data on Array
         providersArray = response.data
         populateTable(providersArray)
+        populateTableBL(providersArray)
         console.log(providersArray)
 
       } catch (e) {
@@ -20,10 +21,12 @@ $.ajax({
       
     }
 })
+// --------------------------------------------------------//
 
-//Functions
 
-// Populate the table
+//--------------------Functions--------------------//
+
+// Populate table Fornecedores
 function populateTable(data){
     var table = document.getElementById('table-providers')
     for (var i = 0; i < data.length; i++) { 
@@ -40,3 +43,24 @@ function populateTable(data){
       table.innerHTML+= row
     }
   }
+
+//Populate table Lista Negra
+function populateTableBL(data){
+  var table = document.getElementById('table-blacklist')
+    
+  for (var i = 0; i < data.length; i++) {
+    //Validate if Fornecedor status listaNegra equals true  
+    if (data[i].listaNegra == true) {
+      var row = `<tr>
+                    <td>${data[i].nomeFantasia}</td>
+                    <td>${data[i].cnpj}</td>
+                    <td>${data[i].telefone}</td>
+                    <td>${data[i].email}</td> 
+                 </tr>`
+
+      table.innerHTML += row
+    }
+  }
+}
+
+//--------------------Functions--------------------//
