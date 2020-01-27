@@ -1,8 +1,7 @@
-
 //Variáveis
 var providersArray = []
 
-//AJAX - configuração buscando a url da api e salvando os dados no objeto
+//AJAX -  URL request and saving api-data
 $.ajax({
     method:'GET',
     url :'https://damp-tundra-82992.herokuapp.com/api/fornecedores/',
@@ -15,9 +14,7 @@ $.ajax({
         console.log(providersArray)
 
       } catch (e) {
-
-        console.log('Não foi possivel listar os Fornecedores :')
-        alert('Erro ao buscar Fornecedores')
+        alert('Url error : Existe algum problema na Rota !')
 
       }
       
@@ -26,7 +23,7 @@ $.ajax({
 
 //Functions
 
-// populate the table
+// Populate the table
 function populateTable(data){
     var table = document.getElementById('table-providers')
     for (var i = 0; i < data.length; i++) { 

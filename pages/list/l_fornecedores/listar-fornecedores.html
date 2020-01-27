@@ -143,7 +143,8 @@
   </div>
   <!-- Aba de fornecedores em Lista Negra -->
   <div class="tab-pane" role="tabepanel" id="lista-negra">
-    <table class="table table-striped table-condensed table-hover table-bordered table-dark">
+    <!-- TABELA DE FORNECEDORES LISTA NEGRA -->
+    <table id="table-blacklist" class="table table-striped table-condensed table-hover table-bordered table-dark">
       <thead>
         <tr>
           <th>Nome</th>
@@ -154,87 +155,75 @@
         </tr>
       </thead>
       <tbody>
-        <td>Casas Pencilna</td>
-        <td>157.457.556-15</td>
-        <td>administracao@casaspencilna.com</td>
-        <td>(77)9177-0077</td>
-        
-        <!-- Botão de mais informações -->
-        <td>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">
-            +
-          </button>
-        </td>
-      </tr>
-      
-    </tbody>
-  </table>
+        <!-- It's will be pupulated by JavaScript -->
+      </tbody>
+    </table>
   
   <!-- Tela de informações -->
-  <form class="modal fade" class="fade" id="info" action="../../alterar-fornecedor">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        
-        <!-- cabeçalho do modal de informações do fornecedor  -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-          <h4 class="modal-title">Informações sobre o fornecedor</h4>
-        </div>
-        
-        <!-- Corpo do formulario -->
-        <div class="modal-body"> 
-          <table>
-            <tr>
-              <th>Razão Social</th>
-              <td>[...]</td>
-            </tr>
-            <tr>
-              <th>Nome Fantasia</th>
-              <td>Casas Pencilna</td>
-            </tr>
-            <tr>
-              <th>CNPJ</th>
-              <td>157.457.556-15  </td>
-            </tr>
-            <tr>
-              <th>Cidade/Estado</th>
-              <td>Uibai/BA</td>
-            </tr>
-            <tr>
-              <th>Telefone</th>
-              <td>(77)9177-0077</td>
-            </tr>
-            <tr>
-              <th>E-mail</th>
-              <td>administracao@casaspencilna.com </td>
-            </tr>
-            <tr>
-              <th>Nome do responsável</th>
-              <td>Pencilna Paloma Araujo</td>
-            </tr>   
-          </table>    
+    <form class="modal fade" class="fade" id="info" action="../../alterar-fornecedor">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
           
-          <!-- Rodapé do formaulário -->
-          <div class="modal-footer">
-            <div class="btn-toolbar" role="toolbar">
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary"
-                style="margin-left:10px;" formaction="../../register/alterar-fornecedor">
-                <span class="glyphicon glyphicon-pencil" data-toggle="tooltip"class="tooltip-arrow"title="Alterar"></span>
-              </button>
-              <button type="button" class="btn btn-danger" onclick="excluir()" 
-              style="margin-left:10px;">
-              <span class="glyphicon glyphicon-trash" data-toggle="tooltip"class="tooltip-arrow"title="Excluir"></span>
+          <!-- cabeçalho do modal de informações do fornecedor  -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
             </button>
+            <h4 class="modal-title">Informações sobre o fornecedor</h4>
           </div>
-        </div>          
+          
+          <!-- Corpo do formulario -->
+          <div class="modal-body"> 
+            <table>
+              <tr>
+                <th>Razão Social</th>
+                <td>[...]</td>
+              </tr>
+              <tr>
+                <th>Nome Fantasia</th>
+                <td>Casas Pencilna</td>
+              </tr>
+              <tr>
+                <th>CNPJ</th>
+                <td>157.457.556-15  </td>
+              </tr>
+              <tr>
+                <th>Cidade/Estado</th>
+                <td>Uibai/BA</td>
+              </tr>
+              <tr>
+                <th>Telefone</th>
+                <td>(77)9177-0077</td>
+              </tr>
+              <tr>
+                <th>E-mail</th>
+                <td>administracao@casaspencilna.com </td>
+              </tr>
+              <tr>
+                <th>Nome do responsável</th>
+                <td>Pencilna Paloma Araujo</td>
+              </tr>   
+            </table>    
+            
+            <!-- Rodapé do formaulário -->
+            <div class="modal-footer">
+              <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary"
+                  style="margin-left:10px;" formaction="../../register/alterar-fornecedor">
+                  <span class="glyphicon glyphicon-pencil" data-toggle="tooltip"class="tooltip-arrow"title="Alterar"></span>
+                </button>
+                <button type="button" class="btn btn-danger" onclick="excluir()" 
+                style="margin-left:10px;">
+                <span class="glyphicon glyphicon-trash" data-toggle="tooltip"class="tooltip-arrow"title="Excluir"></span>
+              </button>
+            </div>
+          </div>          
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
 
-</div>
+  </div>
 </div>
 
 <!-- to use bootstrap v3.3.7  -->
