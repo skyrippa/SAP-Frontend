@@ -33,7 +33,7 @@ function populateTable(data){
                       <td>${data[i].sigla}</td>
                       <td>${data[i].ramal}</td>
                       <td>${data[i].email}</td>
-                      <td><button type="button" class="btn btn-primary">+</button>
+                      <td><button type="button" class="btn btn-primary" " data-toggle="modal" data-target="#info">+</button></td>
                       </td>
                   </tr>`
                     
