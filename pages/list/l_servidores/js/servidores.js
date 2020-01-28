@@ -2,7 +2,7 @@
 //Variáveis
 var servidoresArray = []
 
-//AJAX - configuração buscando a url da api e salvando os dados no objeto
+//AJAX -  URL request and saving api-data
 $.ajax({
     method:'GET',
     url :'https://damp-tundra-82992.herokuapp.com/api/servidores',
@@ -21,18 +21,19 @@ $.ajax({
       
     }
 })
+// --------------------------------------------------------//
 
-//Functions
 
-// populate the table
+//--------------------Functions--------------------//
+
+// Populate table Servidores
 function populateTable(data){
     var table = document.getElementById('employee-table')
     for (var i = 0; i < data.length; i++) { 
       var row = ` <tr><td>${data[i].nome}</td>
                       <td>${data[i].cargo}</td>
                       <td>${data[i].setor}</td>
-                      <td><button type="button" class="btn btn-primary">+</button>
-                      </td>
+                      <td><button type="button" class="btn btn-primary" " data-toggle="modal" data-target="#info">+</button></td>
                   </tr>`
                     
                     
@@ -40,3 +41,4 @@ function populateTable(data){
       table.innerHTML+= row
     }
   }
+  //--------------------Functions--------------------//
